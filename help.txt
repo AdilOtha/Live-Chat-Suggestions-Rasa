@@ -1,0 +1,19 @@
+https://bit.ly/3nC4Q6J
+
+How to install and train chatbot
+Make sure you have git, python, virtualenv and npm installed
+Clone the repository git clone https://github.com/varunon9/chat-reply-suggestions.git
+Go to project directory cd chat-reply-suggestions/
+Create a virtual environment virtualenv venv
+Activate virtual environment source venv/bin/activate
+Install Rasa NLU as well as spacy pip install rasa_nlu[spacy] --default-timeout=100
+Install language model for the english language python -m spacy download en_core_web_md
+Link to model data python -m spacy link en_core_web_md en
+Install some additional dependencies pip install -r requirements.txt
+Place your nlu_data.json file inside data directory (a sample file is provided).
+Train the intent models using below command
+python -m rasa_nlu.train --config config_spacy.yml --data data/nlu_data.json --path projects
+Install node dependencies npm install
+Start nlu server in current terminal python -m rasa_nlu.server --path projects
+Open another terminal in same project directory (no need to activate virtual environment)
+Start the app node index.js
