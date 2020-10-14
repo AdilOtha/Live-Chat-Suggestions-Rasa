@@ -1,7 +1,6 @@
 How to install and train chatbot
 Make sure you have git, python, virtualenv and npm installed
-Clone the repository git clone https://github.com/varunon9/chat-reply-suggestions.git
-Go to project directory cd chat-reply-suggestions/
+Go to project directory
 Create a virtual environment virtualenv venv
 Activate virtual environment source venv/bin/activate
 Install Rasa NLU as well as spacy pip install rasa_nlu[spacy] --default-timeout=100
