@@ -1,5 +1,3 @@
-https://bit.ly/3nC4Q6J
-
 How to install and train chatbot
 Make sure you have git, python, virtualenv and npm installed
 Clone the repository git clone https://github.com/varunon9/chat-reply-suggestions.git
